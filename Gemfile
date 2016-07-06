@@ -9,7 +9,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'pg'
-gem 'omniauth'
+gem 'omniauth', '~> 1.1.0'
 gem 'omniauth-spotify'
 
 group :development, :test do
