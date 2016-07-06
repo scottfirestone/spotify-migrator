@@ -14,3 +14,6 @@
 
 # Ignore project notes
 /project_notes.md
+
+# Ignore API Keys/Secrets
+/config/application.yml

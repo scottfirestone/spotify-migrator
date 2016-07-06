@@ -96,4 +96,19 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  def stub_omniauth
+    OmniAuth.config.test_mode = true
+
+    OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new(
+      "uid" => "mock_user",
+      "info" => {
+        "image" => "mock_user_thumbnail_url"
+      },
+      "credentials" => {
+        "auth_token" => "mock_auth_token",
+        "refresh_token" => "mock_refresh_token",
+        "expires_at" => "mock_token_expiry"
+      }
+    )
+  end
 end
