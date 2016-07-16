@@ -11,6 +11,7 @@ gem 'figaro'
 gem 'pg'
 gem 'omniauth', '~> 1.1.0'
 gem 'omniauth-spotify'
+gem 'react-rails'
 
 group :development, :test do
   gem 'byebug'
